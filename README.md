@@ -1,4 +1,4 @@
-#Harry Potter Kata 
+# Harry Potter Kata 
 
 My solution to the [Harry Potter Kata](https://github.com/nspectator/katas/tree/master/list/HarryPotter) using Java 8 with Gradle.
 
