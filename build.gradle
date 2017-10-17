@@ -21,7 +21,6 @@ jar {
     from { configurations.testRuntime.collect { it.isDirectory() ? it : zipTree(it) } }
 }
 
-//equivalent of running jar command on the command line
 task run(type: Exec, dependsOn: jar) {
     executable 'java'
     args '-jar', "$jar.archivePath"
