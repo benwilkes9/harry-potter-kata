@@ -6,6 +6,7 @@ import java.util.Map;
 
 public class ShoppingBasket {
 
+    public static final String POTTER_PROMO_CODE = "POTTER";
     private final ArrayList<Book> books;
     private BigDecimal totalPrice;
     private BigDecimal discount;
@@ -47,8 +48,8 @@ public class ShoppingBasket {
             setDiscount(new BigDecimal(0));
         }
 
-        if (promotions.containsKey("POTTER" + distinctBooks)) {
-            Promotion promotion = promotions.get("POTTER" + distinctBooks);
+        if (promotions.containsKey(POTTER_PROMO_CODE + distinctBooks)) {
+            Promotion promotion = promotions.get(POTTER_PROMO_CODE + distinctBooks);
             percentageDiscount = new BigDecimal(promotion.getPercentageDiscount());
             setDiscount(basePrice.multiply(percentageDiscount).multiply(new BigDecimal(distinctBooks)));
         } else {
