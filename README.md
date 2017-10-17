@@ -8,4 +8,4 @@ To execute the tests:
 
 Or run them in your IDE
 
-Look at BookStoreTest test class to understand the solution. There is a Book class, Promotion class, and ShoppingBasket class.  The BookStore test class implements these, creating instances of books and promotions and then adding books to the ShoppingBasket, applying promotions and asserting the results.
+Look at BookStoreTest test class to understand the solution. There is a Book class, Promotion class, and ShoppingBasket class.  The BookStoreTest class implements these, creating instances of books and promotions and then adding books to the ShoppingBasket, applying promotions and asserting the results.
